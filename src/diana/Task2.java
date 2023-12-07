@@ -1,7 +1,7 @@
-package dianaTask2;
+package diana;
 
 public class Task2 {
     public static void main(String[] args) {
-        System.out.println("Hello Java31 from Diana");
+        System.out.println("Try #2");
     }
 }
