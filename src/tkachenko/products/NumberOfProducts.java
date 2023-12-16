@@ -64,6 +64,7 @@ public class NumberOfProducts {
     public int getCarrotSalad() {
         return carrotSalad;
     }
+
     public int getSauerkraut() {
         return sauerkraut;
     }
