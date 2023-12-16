@@ -1,4 +1,14 @@
 package yukhymuk.Exam;
 
-public class HotDog {
+public interface HotDog {
+
+
+    void addFirstRecipe();
+
+    void addSecondRecipe();
+
+    void addThirdRecipe();
+
+    void addOunRecipe();
+
 }
