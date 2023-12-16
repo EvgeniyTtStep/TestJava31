@@ -9,6 +9,7 @@ public class Products {
 
     void german() {
     }
+
     void yourself() {
     }
 }
