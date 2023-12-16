@@ -40,7 +40,6 @@ public class NumberOfProducts {
     public int getFrenchBread() {
         return frenchBread;
     }
-
     public int getSpicyKetchup() {
         return spicyKetchup;
     }
