@@ -11,4 +11,5 @@ public interface HotDog {
 
     void addOunRecipe();
 
+    String getOrderInfo();
 }
