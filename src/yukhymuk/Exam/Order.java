@@ -15,6 +15,7 @@ public class Order {
     public Order(HotDog hotDog, Map<String, Integer> ingredients) {
         this.hotDog = hotDog;
         this.ingredients = ingredients;
+        this.telefonNumber =telefonNumber;
         this.paymant = paymant;
     }
 
