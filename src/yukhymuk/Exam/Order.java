@@ -8,10 +8,16 @@ public class Order {
     private static HotDog hotDog;
     private Map<String, Integer> ingredients = new HashMap<>();
 
-    public Order(Map<String, Integer> ingredients) {
+    private String telefonNumber;
+    private Paymant paymant;
+
+
+    public Order(HotDog hotDog, Map<String, Integer> ingredients) {
         this.hotDog = hotDog;
         this.ingredients = ingredients;
+        this.paymant = paymant;
     }
+
 
     public String orderInfo() {
         return "Order Information: " + hotDog.getOrderInfo();
