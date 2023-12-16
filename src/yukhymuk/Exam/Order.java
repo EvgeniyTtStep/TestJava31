@@ -1,4 +1,4 @@
 package yukhymuk.Exam;
 
-public class Orders {
+public class Order {
 }
