@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Ingredients {
     private String roll;
+    private String lavash;
     private String sausage;
     private String mayonnaise;
     private String ketchup;
@@ -13,6 +14,9 @@ public class Ingredients {
 
     public void addRoll(int quantity) {
     }
+    public void addLavash(int quantity) {
+    }
+
 
     public void addMayonnaise(int quantity) {
     }
