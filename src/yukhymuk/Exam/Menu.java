@@ -7,7 +7,7 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Виберіть операцію");
-        //Metods metods = new Metods();
+        HotDog hotDog = new HotDog();
 
         while (true) {
             System.out.println("1 Хот-дог з класичною сосискою (булка, сосиска,майонез, кетчуп, гірчиця, морква ко-корейські)");
@@ -27,37 +27,16 @@ public class Menu {
             boolean isSelect = true;
 
             switch (choice) {
-                case 1 -> {
-
-                }
-
-                case 2 -> {
-
-                }
-                case 3 -> {
-
-                }
-                case 4 -> {
-
-                }
-                case 5 -> {
-
-                }
-                case 6 -> {
-
-                }
-                case 7 -> {
-
-                }
-                case 8 -> {
-
-                }
-                case 9 -> {
-
-                }
-                case 10 -> {
-
-                }
+                case 1 -> {hotDog.addFirstRecipe();}
+                case 2 -> {hotDog.addSecondRecipe();}
+                case 3 -> {hotDog.addThirdRecipe();}
+                case 4 -> {hotDog.addOunRecipe();}
+                case 5 -> {hotDog.addToppings();}
+                case 6 -> {Paymant paymant = hotDog.paymant;}
+                case 7 -> {}
+                case 8 -> {}
+                case 9 -> {}
+                case 10 -> {}
                 case 0 -> {
                     System.out.println("До побачення");
                     isSelect = false;

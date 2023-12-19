@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class HotDog implements IHotDog{
     Ingredients ingredients = new Ingredients();
+    Paymant paymant= new Paymant();
     @Override
     public void  addFirstRecipe(){
 
@@ -80,20 +81,24 @@ public class HotDog implements IHotDog{
             System.out.println("Ви обрали: ");
 
             switch (userChoice) {
-                    case 1 -> System.out.println("Солодка цибуля");
-                    case 2 -> System.out.println("Халапеньйо");
-                    case 3 -> System.out.println("Чилі");
-                    case 4 -> System.out.println("Солоний огірок");
-                    case 5 -> System.out.println("Сирний соус");
-                    case 6 -> System.out.println("Часниковий соус");
-                    case 0 -> {System.out.println("Вихід");
-                    isSelect = false;;
+                case 1 -> System.out.println("Солодка цибуля");
+                case 2 -> System.out.println("Халапеньйо");
+                case 3 -> System.out.println("Чилі");
+                case 4 -> System.out.println("Солоний огірок");
+                case 5 -> System.out.println("Сирний соус");
+                case 6 -> System.out.println("Часниковий соус");
+                case 0 -> {
+                    System.out.println("Вихід");
+                    isSelect = false;
+                    Menu menu = new Menu();
+                    menu.menu();
+
                 }
             }
         }
     }
-    public static void main(String[] args) {
-        HotDog hotDog = new HotDog();
-         hotDog.addToppings();
-    }
+//    public static void main(String[] args) {
+//        HotDog hotDog = new HotDog();
+//         hotDog.addToppings();
+//    }
 }

@@ -9,12 +9,17 @@ private boolean card;
         this.card = card;
     }
 
+    public Paymant() {
+
+    }
+
     public boolean cash() {
         return cash;
     }
     public boolean card() {
         return card;
     }
+
     public void paymentMetod() {
         if (cash) {
             System.out.println("- Cash");
