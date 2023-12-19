@@ -5,14 +5,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Order {
-    private static HotDog hotDog;
+    private static IHotDog hotDog;
     private Map<String, Integer> ingredients = new HashMap<>();
 
     private String telefonNumber;
     private Paymant paymant;
 
 
-    public Order(HotDog hotDog, Map<String, Integer> ingredients) {
+    public Order(IHotDog hotDog, Map<String, Integer> ingredients) {
         this.hotDog = hotDog;
         this.ingredients = ingredients;
         this.telefonNumber =telefonNumber;
@@ -36,4 +36,5 @@ public class Order {
             throw new RuntimeException(e);
         }
     }
+
 }
