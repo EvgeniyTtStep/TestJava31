@@ -2,7 +2,6 @@ package yukhymuk.Exam;
 
 public interface IHotDog {
 
-Ingredients ingredients = new Ingredients();
 
     void addFirstRecipe();
 

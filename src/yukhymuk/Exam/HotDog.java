@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class HotDog implements IHotDog{
     Ingredients ingredients = new Ingredients();
-    Paymant paymant= new Paymant();
+    Payment payment= new Payment();
+
+    public HotDog() {
+    }
+
     @Override
     public void  addFirstRecipe(){
 
@@ -97,8 +101,4 @@ public class HotDog implements IHotDog{
             }
         }
     }
-//    public static void main(String[] args) {
-//        HotDog hotDog = new HotDog();
-//         hotDog.addToppings();
-//    }
 }

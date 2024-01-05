@@ -1,15 +1,15 @@
 package yukhymuk.Exam;
 
-public class Paymant {
+public class Payment {
 private boolean cash;
 private boolean card;
 
-    public Paymant(boolean cash, boolean card) {
+    public Payment(boolean cash, boolean card) {
         this.cash = cash;
         this.card = card;
     }
 
-    public Paymant() {
+    public Payment() {
 
     }
 
@@ -20,7 +20,7 @@ private boolean card;
         return card;
     }
 
-    public void paymentMetod() {
+    public void paymentMethod() {
         if (cash) {
             System.out.println("- Cash");
         }
