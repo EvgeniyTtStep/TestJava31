@@ -14,19 +14,26 @@ public class CashRegister {
         float pay1 = 0;
         if (Products.getDiscount() >= 10) {
             pay1 = (pay * 90) / 100;
+            System.out.println("Сума до сплати " + pay1 + "$");
         } else if (Products.getDiscount() >= 6) {
             pay1 = (pay * 95) / 100;
+            System.out.println("Сума до сплати " + pay1 + "$");
+        } else {
+            System.out.println("Сума до сплати " + Products.getPrice() + "$");
         }
-        System.out.println("Сума до сплати " + pay1 + "$");
         System.out.println("Введіть суму яку ви даєте");
         int cash = sc.nextInt();
-        rest = cash - pay;
+        if (pay1 > 0) {
+            rest = cash - pay1;
+        } else {
+            rest = cash - pay;
+        }
         if (rest > 0) {
-            this.cashReg += pay;
+            this.cashReg += pay1;
             this.cashReg -= rest;
             System.out.println("Ваша решта = " + rest + "$\nДякуємо за замовлення!");
         } else {
-            this.cashReg += pay;
+            this.cashReg += pay1;
             System.out.println("Дякуємо за замовлення.");
         }
 

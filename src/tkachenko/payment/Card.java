@@ -11,7 +11,7 @@ public class Card {
             pay1 =  (pay*95)/100;
 
         }
-        System.out.println("Сума до сплати " + pay1 +"$");
+        System.out.println("Сума до сплати " + Products.getPrice() +"$");
         System.out.println("Обробка платежу...");
         try {
             Thread.sleep(3000);
