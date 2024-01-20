@@ -34,7 +34,7 @@ public class CashRegister {
             System.out.println("Ваша решта = " + rest + "$\nДякуємо за замовлення!");
         } else {
             this.cashReg += pay1;
-            System.out.println("Дякуємо за замовлення.");
+            System.out.println("Дякуємо за замовлення!");
         }
 
     }
